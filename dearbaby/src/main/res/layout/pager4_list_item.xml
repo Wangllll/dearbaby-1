@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/id_pager4ListView_item_img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:textColor="@color/abc_primary_text_material_light"
+        android:layout_toRightOf="@id/id_pager4ListView_item_img_1"
+        android:id="@+id/id_pager4ListView_item_tx_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:textColor="@color/abc_primary_text_material_light"
+        android:id="@+id/id_pager4ListView_item_tx_2"
+        android:layout_toRightOf="@id/id_pager4ListView_item_img_1"
+        android:layout_alignBottom="@+id/id_pager4ListView_item_img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <ImageView
+        android:id="@+id/id_pager4ListView_item_img_2"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />
+
+</RelativeLayout>

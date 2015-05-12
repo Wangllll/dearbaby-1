@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_fragmentCommunication"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_floating_material_light"
+    android:visibility="gone"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/link_text_material_dark"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:onClick="slidingmenuCommunicationOnClick"
+            android:src="@drawable/sliding_communication_image_1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:text="@string/fragment_communication_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/background_material_light"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/main_top_1_1"
+            android:onClick="slidingMenu" />
+    </LinearLayout>
+    <SearchView
+        android:background="@android:drawable/edit_text"
+        android:iconifiedByDefault="false"
+        android:queryHint="查找联系人"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></SearchView>
+</LinearLayout>

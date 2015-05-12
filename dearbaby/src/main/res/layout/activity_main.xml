@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/id_drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/id_activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="@color/link_text_material_dark"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/id_topLeftImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:id="@+id/id_topTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/background_material_light"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/id_topButton"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/main_top_1_1"
+                        android:onClick="slidingMenu" />
+                </LinearLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/background_floating_material_light" />
+
+                <LinearLayout
+                    android:id="@+id/id_activityMainBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="62dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/background_floating_material_light"
+                    android:gravity="bottom">
+
+                    <ImageView
+                        android:id="@+id/main_bottom_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="jumpInterface"
+                        android:src="@drawable/main_bottom_1_2" />
+
+                    <ImageView
+                        android:id="@+id/main_bottom_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="jumpInterface"
+                        android:src="@drawable/main_bottom_2_1" />
+
+                    <ImageView
+                        android:id="@+id/main_bottom_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="jumpInterface"
+                        android:src="@drawable/main_bottom_3_1" />
+
+                    <ImageView
+                        android:id="@+id/main_bottom_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="jumpInterface"
+                        android:src="@drawable/main_bottom_4_1" />
+
+                    <ImageView
+                        android:id="@+id/main_bottom_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="jumpInterface"
+                        android:src="@drawable/main_bottom_5_1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<include layout="@layout/slidingmenu_communication" />-->
+            <fragment
+                android:name="com.weiyan.administrator.slidingFunction.SlidingCommunication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/slidingmenu_communication" />
+            <fragment
+                android:name="com.weiyan.administrator.slidingFunction.SlidingHealth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/slidingmenu_health"
+                />
+            <fragment
+                android:name="com.weiyan.administrator.slidingFunction.SlidingGrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout ="@layout/slidingmenu_grow"/>
+
+            <fragment
+                android:name="com.weiyan.administrator.pager3Function.Pager3MakeMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/pager3_makemoney"/>
+
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/id_left_menu"
+            android:name="com.weiyan.administrator.myapplication.SlidingMenuFragment"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:tag="RIGHT"
+            tools:layout="@layout/activity_slidingmenu" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.weiyan.administrator.slidingFunction.SlidingLeave"
+        tools:layout="@layout/slidingmenu_leave" />
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.weiyan.administrator.slidingFunction.SlidingCommunicationAddfriends"
+        tools:layout="@layout/slidingmenu_communication_addfriends" />
+
+</LinearLayout>

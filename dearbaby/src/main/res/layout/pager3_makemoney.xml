@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_pager3_ll_makemoney"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/link_text_material_dark"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/id_pager3_makemoney_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="pager3MakeMoneyOnClick"
+            android:src="@drawable/slidinging_leave_top_1_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/pager3_makemoney_top"
+            android:textColor="@color/background_material_light"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/main_top_1_1"
+            android:onClick="slidingMenu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/id_pager3_makemoney_topbt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/primary_text_default_material_dark"
+            android:gravity="center"
+            android:text="@string/pager3_topbt1"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/id_pager3_makemoney_topbt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/primary_text_default_material_dark"
+            android:gravity="center"
+            android:text="@string/pager3_topbt2"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/id_pager3_makemoney_topbt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/primary_text_default_material_dark"
+            android:gravity="center"
+            android:text="@string/pager3_topbt3"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_weight="1"
+        android:dividerHeight="10dp"
+        android:id="@+id/id_pager3_makemoney_lv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:id="@+id/id_pager3_makemoney_lv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:id="@+id/id_pager3_makemoney_lv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/id_pager3_makemoney_bottom1"
+            android:layout_alignParentLeft="true"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pager3_makemoney_bottom1"
+           />
+
+        <TextView
+            android:id="@+id/id_pager3_makemoney_bottom2"
+            android:layout_toRightOf="@id/id_pager3_makemoney_bottom1"
+            android:textColor="@color/link_text_material_dark"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 123 "
+            />
+        <TextView
+            android:layout_toRightOf="@id/id_pager3_makemoney_bottom2"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pager3_makemoney_bottom2"
+            />
+
+        <TextView
+            android:id="@+id/id_pager3_makemoney_bottom6"
+            android:layout_alignParentRight="true"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pager3_makemoney_bottom4"
+            />
+        <TextView
+            android:id="@+id/id_pager3_makemoney_bottom5"
+            android:layout_toLeftOf="@id/id_pager3_makemoney_bottom6"
+            android:textColor="@color/link_text_material_dark"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            />
+
+        <TextView
+            android:layout_toLeftOf="@id/id_pager3_makemoney_bottom5"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pager3_makemoney_bottom3"
+            />
+        </RelativeLayout>
+
+
+</LinearLayout>

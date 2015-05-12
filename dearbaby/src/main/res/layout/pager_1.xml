@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@color/primary_text_default_material_dark"
+            android:gravity="center"
+            android:text="@string/pager1_topbt1"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:id="@+id/id_pager1Change1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          />
+        <Button
+            android:background="@color/primary_text_default_material_dark"
+            android:text="@string/pager1_topbt2"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:id="@+id/id_pager1Change2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    <ListView
+        android:id="@+id/main_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:dividerHeight="10dp" />
+
+    <ImageView
+        android:id="@+id/id_pager1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pager4_bg"
+        android:visibility="gone"/>
+</LinearLayout>
+
+

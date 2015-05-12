@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/id_pager3_makemoney_listitem1_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/id_pager3_makemoney_listitem1_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/abc_primary_text_material_light"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_pager3_makemoney_listitem1_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/test_pager3_makemoney_listitem1_5"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/id_pager3_makemoney_listitem1_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_pager3_makemoney_listitem1_text2"
+                android:textColor="@color/button_material_dark"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/id_pager3_makemoney_listitem1_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/link_text_material_dark" />
+
+            <TextView
+                android:id="@+id/id_pager3_makemoney_listitem1_text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/test_pager3_makemoney_listitem1_6"
+                android:gravity="center"
+                android:textColor="@color/abc_secondary_text_material_dark" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
